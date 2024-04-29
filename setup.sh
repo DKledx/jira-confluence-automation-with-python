@@ -1,13 +1,24 @@
 #!/bin/bash
 
-# Create directories
-mkdir -p src tests
+mkdir -p models
+mkdir -p services
+mkdir -p templates
+mkdir -p tests
 
-# Create README.md file
-echo "# Project Title" > README.md
-
-# Create Python files in src
-touch src/__init__.py src/main.py src/jira_api.py src/confluence_api.py src/utils.py
-
-# Create Python files in tests
-touch tests/__init__.py tests/test_jira_api.py tests/test_confluence_api.py
+touch __init__.py
+touch models/__init__.py
+touch models/project.py
+touch models/epic.py
+touch models/task.py
+touch services/__init__.py
+touch services/project_service.py
+touch services/epic_service.py
+touch services/task_service.py
+touch templates/project_template.yaml
+touch main.py
+touch tests/__init__.py
+touch tests/test_project.py
+touch tests/test_epic.py
+touch tests/test_task.py
+touch requirements.txt
+touch README.md
